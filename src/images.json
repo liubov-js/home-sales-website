@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "homeId": 1,
+        "image": "/images/dhruv-mehra-EItAcdPP-kk-unsplash.jpg"
+    },
+    {
+        "id": 2,
+        "homeId": 2,
+        "image": "/images/todd-kent-178j8tJrNlc-unsplash.jpg"
+    },
+    {
+        "id": 3,
+        "homeId": 3,
+        "image": "/images/trinity-nguyen-xQhqS7OWEqE-unsplash.jpg"
+    },
+    {
+        "id": 4,
+        "homeId": 4,
+        "image": "/images/ksenia-balandina-RCF5KSWb7Ms-unsplash.jpg"
+    },
+    {
+        "id": 5,
+        "homeId": 5,
+        "image": "/images/mary-pokatova-Jspjy9z_fq4-unsplash.jpg"
+    },
+    {
+        "id": 6,
+        "homeId": 6,
+        "image": "/images/mr-autthaporn-pradidpong-EFV7e9r7Dfg-unsplash.jpg"
+    },
+    {
+        "id": 7,
+        "homeId": 7,
+        "image": "/images/phinehas-adams-v798s6DPfzI-unsplash.jpg"
+    },
+    {
+        "id": 8,
+        "homeId": 8,
+        "image": "/images/ronnie-george-9gGvNWBeOq4-unsplash.jpg"
+    },
+    {
+        "id": 9,
+        "homeId": 9,
+        "image": "/images/scott-webb-1ddol8rgUH8-unsplash.jpg"
+    },
+    {
+        "id": 10,
+        "homeId": 10,
+        "image": "/images/todd-kent-178j8tJrNlc-unsplash.jpg"
+    },
+    {
+        "id": 11,
+        "homeId": 11,
+        "image": "/images/trinity-nguyen-xQhqS7OWEqE-unsplash.jpg"
+    },
+    {
+        "id": 12,
+        "homeId": 12,
+        "image": "/images/dhruv-mehra-EItAcdPP-kk-unsplash.jpg"
+    }
+]

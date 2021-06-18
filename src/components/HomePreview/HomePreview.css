@@ -1,0 +1,98 @@
+.LinkToFullPost {
+    text-decoration: none;
+    color: #363636;
+    cursor: pointer;
+}
+
+.HomePreview {
+    margin: 18px 11px;
+    width: 379px;
+    height: 381px;
+    background: #F8F8F8;
+    border: 1px solid #D8D8D8;
+    box-sizing: border-box;
+}
+
+.Image {
+    width: 377px;
+    height: 233px;
+    position: relative;
+}
+
+.Independent {
+    text-align: right;
+    margin: -33px 0 0 auto;
+    padding: 6px;
+    position: relative;
+    background: #006F79;
+    width: 113px;
+    height: 17px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.Support {
+    text-align: right;
+    margin: -33px 0 0 auto;
+    padding: 6px;
+    position: relative;
+    background: #EC6608;
+    width: 188px;
+    height: 17px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.Info {
+    padding: 10px;
+    line-height: 50%;
+}
+
+.Title {
+    margin: 15px auto 13px 20px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: #363636;
+}
+
+.Address {
+    width: 254px;
+    height: 22px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #363636;
+    margin: 0px auto 0px 20px;
+}
+
+.NewProperties {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #363636;
+    margin: 18px auto 0px 20px;
+}
+
+.Ownership {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #363636;
+    margin-left: 20px;
+    margin-top: 16px;
+}
