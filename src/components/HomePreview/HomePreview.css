@@ -5,18 +5,45 @@
 }
 
 .HomePreview {
-    margin: 18px 11px;
-    width: 379px;
-    height: 381px;
+    display: inline-block;
     background: #F8F8F8;
     border: 1px solid #D8D8D8;
     box-sizing: border-box;
+    margin-bottom: 38px;
 }
 
+
+@media (max-width: 767px) {
+    .HomePreview {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1089px) {
+   .HomePreview {
+        margin-right: 4%;
+        width: 48%;
+    }
+
+    .HomePreview:nth-of-type(2n) {
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 1090px) {
+    .HomePreview {
+        margin-right: 2%;
+        width: 32%;
+    }
+
+    .HomePreview:nth-of-type(3n) {
+        margin-right: 0;
+    }
+}
+
+
 .Image {
-    width: 377px;
-    height: 233px;
-    position: relative;
+    width: 100%;
 }
 
 .Independent {
@@ -52,12 +79,13 @@
 }
 
 .Info {
-    padding: 10px;
-    line-height: 50%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px 20px;
+    line-height: 1;
 }
 
 .Title {
-    margin: 15px auto 13px 20px;
     font-family: "Open Sans";
     font-style: normal;
     font-weight: bold;
@@ -74,7 +102,6 @@
     font-size: 16px;
     line-height: 22px;
     color: #363636;
-    margin: 0px auto 0px 20px;
 }
 
 .NewProperties {
@@ -83,7 +110,7 @@
     font-weight: normal;
     font-size: 16px;
     color: #363636;
-    margin: 18px auto 0px 20px;
+    margin-top: 15px;
 }
 
 .Ownership {
@@ -93,6 +120,4 @@
     font-size: 14px;
     line-height: 19px;
     color: #363636;
-    margin-left: 20px;
-    margin-top: 16px;
 }

@@ -34,16 +34,18 @@ class Homes extends Component {
         return (
             <div>
                 <h1 className="Header">Our Latest Developments</h1>
-                <div className="Filter">
-                    <strong>Filter</strong>
-                    <input 
-                        className="Input" 
-                        type="text"
-                        onKeyUp={this.onKeyUpValue}
-                    />
+                <div className="Page">
+                    <div>
+                        <strong className="Filter">Filter</strong>
+                        <input 
+                            className="Input" 
+                            type="text"
+                            onKeyUp={this.onKeyUpValue}
+                        />
+                    </div>
+                    <div className="Homes">{(this.state.filtredHomes || this.state.homes).map(home => <HomePreview key={home.id} {...home} />)}</div>    
+                    <button className="Button">See more <span className="ButtonArrow">〉</span></button> 
                 </div>
-                <div className="Homes">{(this.state.filtredHomes || this.state.homes).map(home => <HomePreview key={home.id} {...home} />)}</div>
-                <button className="Button">See more <span className="ButtonArrow">〉</span></button> 
             </div> 
         );
     }

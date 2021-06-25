@@ -7,8 +7,8 @@ import './HomePreview.css';
 const BLANK_IMAGE_PATH = '/images/house_blank_image.jpg';
 
 const homePreview = (props) => (
-    <Link className="LinkToFullPost" to={`/details/${props.id}`}>
-        <article className="HomePreview" onClick={props.clicked}>
+    <div className="HomePreview" onClick={props.clicked}>
+        <Link className="LinkToFullPost" to={`/details/${props.id}`}>
             <img 
                 className="Image" 
                 src={images.find(img => img.homeId === +props.id)?.image || BLANK_IMAGE_PATH} 
@@ -24,8 +24,8 @@ const homePreview = (props) => (
                 <p className="NewProperties">New Properties for Sale from <strong>£{props.price.toLocaleString('en-US')}</strong></p>
                 <p className="Ownership">Shared Ownership Available</p>
             </div>
-        </article>
-    </Link>
+        </Link>
+    </div>
 );
 
 export default homePreview;

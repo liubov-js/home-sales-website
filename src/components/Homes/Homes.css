@@ -3,13 +3,17 @@
     font-style: normal;
     font-weight: bold;
     font-size: 36px;
+    margin-top: 36px;
     line-height: 49px;
     text-align: center;
     color: #45852D;
 }
 
+.Page {
+    margin: 0 50px;
+}
+
 .Filter {
-    margin-left: 16px;
     font-family: "Open Sans";
     font-style: normal;
     font-weight: bold;
@@ -17,47 +21,43 @@
     line-height: 24px;
     letter-spacing: -0.3px;
     color: #363636;
+    margin-right: 10px;
 }
 
 .Input {
     padding: 12px 20px;
     margin: 8px 0;
     outline: none;
-    margin-left: 20px;
+    width: 418px;
     height: 50px;
-    width: 40%;
+    margin: 43px 0 45px;
     border: 1px solid #D8D8D8;
     box-sizing: border-box;
     border-radius: 25px;
 }
 
-.Homes {
-    display: flex;
-    flex-flow: row wrap;
-    margin: 0 auto;
+@media (max-width: 767px) {
+    .Header {
+        font-size: 28px;
+    }
+
+    .HomePreview {
+        width: 100%;
+    }
+
+    .Input {
+        width: calc(100% - 47px);
+    }
 }
 
-@media (max-width: 1180px) {
-    .Homes {
-      max-width: 970px;
-    }
-  }
-  
-  @media (max-width: 992px) {
-    .Homes {
-      max-width: 750px;
-    }
-  }
-  
-  @media (min-width: 767px) {
-    .Homes {
-      max-width: none;
-    }
-  }
+.Homes {
+    display: block;
+}
+
 
 .Button {
     cursor: pointer;
-    margin: 30px auto 45px;
+    margin: 22px auto 77px;
     display: block;
     width: 150px;
     height: 50px;
