@@ -25,28 +25,35 @@
     outline: none;
     margin-left: 20px;
     height: 50px;
+    width: 40%;
     border: 1px solid #D8D8D8;
     box-sizing: border-box;
     border-radius: 25px;
 }
 
-@media (max-width: 768px) {
-    .Input {
-        width: 50%;
-    }
-}
-
-@media (min-width: 769px) {
-    .Input {
-        width: 40%;
-    }
-}
-
 .Homes {
     display: flex;
     flex-flow: row wrap;
-    margin: auto;
+    margin: 0 auto;
 }
+
+@media (max-width: 1180px) {
+    .Homes {
+      max-width: 970px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .Homes {
+      max-width: 750px;
+    }
+  }
+  
+  @media (min-width: 767px) {
+    .Homes {
+      max-width: none;
+    }
+  }
 
 .Button {
     cursor: pointer;

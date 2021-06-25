@@ -3,16 +3,15 @@ import axios from 'axios';
 
 import HomePreview from '../HomePreview/HomePreview';
 import './Homes.css';
-import images from '../../images.json';
 
 class Homes extends Component {
     constructor (props) {
         super(props);
         this.state = {
             homes: [],
-            images: [],
             filtredHomes: null,
         };
+        this.onKeyUpValue = this.onKeyUpValue.bind(this);
     }
 
     onKeyUpValue(event) {
@@ -23,16 +22,11 @@ class Homes extends Component {
         this.setState({filtredHomes});
     }
 
-    loadImages() {
-        this.setState({images})
-    }
-
     componentDidMount() {
         axios.get('https://603e38c548171b0017b2ecf7.mockapi.io/homes')
             .then((response) => {
                 this.setState({homes: response.data});
             })
-        this.loadImages();
     }
 
     render () {
@@ -45,7 +39,7 @@ class Homes extends Component {
                     <input 
                         className="Input" 
                         type="text"
-                        onKeyUp={this.onKeyUpValue.bind(this)}
+                        onKeyUp={this.onKeyUpValue}
                     />
                 </div>
                 <div className="Homes">{(this.state.filtredHomes || this.state.homes).map(home => <HomePreview key={home.id} {...home} />)}</div>

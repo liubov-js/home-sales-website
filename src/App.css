@@ -1,15 +1,23 @@
 .App {
   background: #FFFFFF;
+  max-width: 1180px;
+  margin: auto;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1180px) {
   .App {
-    margin: 12px;
+    max-width: 970px;
   }
 }
 
-@media (min-width: 769px) {
+@media (max-width: 992px) {
   .App {
-    margin: 36px;
+    max-width: 750px;
+  }
+}
+
+@media (min-width: 767px) {
+  .App {
+    max-width: none;
   }
 }

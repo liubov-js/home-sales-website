@@ -4,10 +4,16 @@ import { Link } from 'react-router-dom';
 import images from '../../images.json';
 import './HomePreview.css';
 
+const BLANK_IMAGE_PATH = '/images/house_blank_image.jpg';
+
 const homePreview = (props) => (
     <Link className="LinkToFullPost" to={`/details/${props.id}`}>
         <article className="HomePreview" onClick={props.clicked}>
-            <img className="Image" src={(images.find(img => img.homeId === +props.id).image)} alt={props.title}/>
+            <img 
+                className="Image" 
+                src={images.find(img => img.homeId === +props.id)?.image || BLANK_IMAGE_PATH} 
+                alt={props.title}
+            />
             {props.type === "IndependentLiving" ? 
                 <p className="Independent">Independent living</p> : 
                 <p className="Support">Restaurant & Support available</p>
