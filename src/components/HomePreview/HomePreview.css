@@ -47,8 +47,7 @@
 }
 
 .Independent {
-    text-align: right;
-    margin: -33px 0 0 auto;
+    margin: -32px 0 0 auto;
     padding: 6px;
     position: relative;
     background: #006F79;
@@ -60,11 +59,11 @@
     font-size: 12px;
     text-align: center;
     color: #FFFFFF;
+    line-height: 1.5em;
 }
 
 .Support {
-    text-align: right;
-    margin: -33px 0 0 auto;
+    margin: -32px 0 0 auto;
     padding: 6px;
     position: relative;
     background: #EC6608;
@@ -76,6 +75,7 @@
     font-size: 12px;
     text-align: center;
     color: #FFFFFF;
+    line-height: 1.5em;
 }
 
 .Info {
